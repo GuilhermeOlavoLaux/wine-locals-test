@@ -1,9 +1,11 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,gBAAgB,EAAE,IAAI;CACvB",
+    "mappings": "AEAA,AAAA,YAAY,CAAC;EACX,gBAAgB,EDDP,OAAO;ECEhB,MAAM,EAAE,KAAK;CAYd;;AAdD,AAII,YAJQ,CAGV,OAAO,CACL,EAAE,CAAC;EACD,KAAK,EDJM,OAAO;ECKlB,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,IAAI;CAClB;;AARL,AASI,YATQ,CAGV,OAAO,CAML,CAAC,CAAC;EACA,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,yBAAyB;CACvC;;ACZL,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAExB",
     "sources": [
         "index.scss",
-        "_Restaurants.scss"
+        "_Vars.scss",
+        "_Restaurants.scss",
+        "_Header.scss"
     ],
     "names": [],
     "file": "index.css"

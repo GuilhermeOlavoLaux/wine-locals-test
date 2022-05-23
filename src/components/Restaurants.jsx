@@ -1,12 +1,23 @@
 import { Fragment } from "react";
-import CompanyLogo from '../assets/images/CompanyLogo.png'
+import Header from "./Header";
 
 export default function Restaurants() {
 
 
     return (
         <Fragment>
-            <img src={CompanyLogo} alt="" />
+
+            <div className="restaurants">
+
+                <Header />
+                <div className="locals">
+
+                    <h1>Lugares</h1>
+
+                    <p>6 lugares cadastrados</p>
+
+                </div>
+            </div>
         </Fragment>
     )
 }

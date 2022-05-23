@@ -1,3 +1,15 @@
-* {
-  background-color: grey;
+.restaurants {
+  background-color: $grey-600;
+  height: 100vh;
+  .locals {
+    h1 {
+      color: $primary-yellow;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+    }
+    p {
+      color: #fff;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+  }
 }
