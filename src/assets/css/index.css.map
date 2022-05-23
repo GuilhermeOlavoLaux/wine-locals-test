@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,gBAAgB,EAAE,IAAI;CACvB",
+    "sources": [
+        "index.scss",
+        "_Restaurants.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
