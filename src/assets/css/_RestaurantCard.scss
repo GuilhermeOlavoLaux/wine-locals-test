@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
 
+
+
   .restaurant-card-container {
     background-color: $grey-400;
     color: $primary-white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 
     border-radius: 8px;
     width: 254px;

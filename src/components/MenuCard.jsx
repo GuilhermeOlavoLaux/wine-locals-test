@@ -1,30 +1,22 @@
-import { Fragment } from "react";
+import { Fragment } from 'react'
 
 export default function MenuCard({ menuItem }) {
+  return (
+    <Fragment>
+      <div className='menu-card'>
+        <div className='menu-card-container'>
+          <div className='menu-card-line'></div>
+          <div className='menu-card-content'>
+            <div className='title'>
+              <h5>{menuItem.name}</h5>
 
-  
-
-    return (
-        <Fragment>
-
-            <div className="menu-card-container">
-
-                <div className="title">
-                    <h5>{menuItem.name}</h5>
-
-                    <p>R$ {menuItem.price}</p>
-                </div>
-
-                <p>{menuItem.description}</p>
-
-
-
-
+              <h5>R$ {menuItem.price}</h5>
             </div>
 
-
-
-        </Fragment>
-    )
-
+            <p>{menuItem.description}</p>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  )
 }

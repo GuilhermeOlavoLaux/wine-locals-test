@@ -52,6 +52,8 @@
 .restaurant-card .restaurant-card-container {
   background-color: #333333;
   color: #fff;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 254px;
   height: 75px;
@@ -74,17 +76,93 @@
   height: 100vh;
 }
 
-.menu-card-container {
+.restaurant-menu .restaurant-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 340px;
+}
+
+.restaurant-menu .restaurant-menu-container .restaurant-info h1 {
+  color: #f3aa00;
+}
+
+.restaurant-menu .restaurant-menu-container .restaurant-info p {
+  color: #fff;
+}
+
+.menu-card .menu-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-card .menu-card-container .menu-card-line {
+  width: 10px;
+  height: 10px;
+  background-color: #f3aa00;
+  height: 140px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.menu-card .menu-card-container .menu-card-content {
   background-color: #464646;
   width: 292px;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 0px 20px 20px 0px;
+  height: 100px;
+  color: #fff;
 }
 
-.menu-card-container .title {
+.menu-card .menu-card-container .menu-card-content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.menu-card .menu-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-card .menu-card-container .menu-card-line {
+  width: 10px;
+  height: 10px;
+  background-color: #f3aa00;
+  height: 140px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.menu-card .menu-card-container .menu-card-content {
+  background-color: #464646;
+  width: 292px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 0px 20px 20px 0px;
+  height: 100px;
+  color: #fff;
+}
+
+.menu-card .menu-card-container .menu-card-content .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

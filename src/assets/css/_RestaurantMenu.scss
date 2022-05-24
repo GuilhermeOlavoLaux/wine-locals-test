@@ -1,5 +1,22 @@
-.restaurant-menu {
+  .restaurant-menu {
   background-color: $grey-300;
 
   height: 100vh;
+
+  .restaurant-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 340px;
+
+    .restaurant-info {
+      h1 {
+        color: $primary-yellow;
+      }
+      p {
+        color: $primary-white;
+      }
+    }
+  }
 }

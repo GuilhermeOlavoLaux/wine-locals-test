@@ -1,21 +1,31 @@
-.menu-card-container {
-  background-color: $grey-200;
-
-  width: 292px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-
-  .title {
+.menu-card {
+  .menu-card-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .menu-card-line {
+      width: 10px;
+      height: 10px;
+      background-color: $primary-yellow;
+      height: 140px;
+      border-radius: 20px 0px 0px 20px;
+    }
 
-    margin-bottom: 10px;
+    .menu-card-content {
+      background-color: $grey-200;
+      width: 292px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 0px 20px 20px 0px;
+      height: 100px;
+      color: $primary-white;
 
-    h5{
-        
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 10px;
+      }
     }
   }
 }
