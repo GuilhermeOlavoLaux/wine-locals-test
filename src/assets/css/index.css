@@ -25,4 +25,33 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.restaurant-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant-card .restaurant-card-container {
+  background-color: #333333;
+  color: #fff;
+  border-radius: 8px;
+  width: 254px;
+  height: 75px;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.restaurant-card .restaurant-card-container h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.restaurant-card .restaurant-card-container p {
+  font-family: 'Nunito Sans', sans-serif;
+}
 /*# sourceMappingURL=index.css.map */
