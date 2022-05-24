@@ -1,6 +1,10 @@
-.logo-container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
+
+  .arrow-container{
+    margin-top: 3px;
+  }
 }

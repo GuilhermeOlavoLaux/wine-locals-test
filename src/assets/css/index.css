@@ -24,7 +24,7 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.logo-container {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +34,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header-container .arrow-container {
+  margin-top: 3px;
 }
 
 .restaurant-card {

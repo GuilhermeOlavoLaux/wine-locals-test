@@ -1,7 +1,8 @@
 import { Fragment } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function RestaurantCard({ restaurant }) {
-
+    const navigate = useNavigate();
     return (
         <Fragment>
 
@@ -13,7 +14,7 @@ export default function RestaurantCard({ restaurant }) {
                 </div>
 
 
-                <button>Mais</button>
+                <button onClick={() => { navigate('/restaurant-menu') }}>Mais</button>
 
             </div>
 

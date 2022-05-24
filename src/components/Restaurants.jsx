@@ -100,7 +100,7 @@ export default function Restaurants() {
                 <Header />
 
 
-                {/* <img src={GreyBackground} alt="grey background" className="grey-background" /> */}
+                {/* <img src={GreyBackground} alt="grey background" className="grey-background" />export default (first) => {second} */}
 
                 <div className="locals">
 
