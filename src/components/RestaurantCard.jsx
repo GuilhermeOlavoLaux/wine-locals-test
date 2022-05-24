@@ -8,13 +8,13 @@ export default function RestaurantCard({ restaurant }) {
 
             <div className="restaurant-card">
 
-                <div className="restaurant-card-container">
+                <div className="restaurant-card-container" onClick={() => { navigate('/restaurant-menu') }}>
                     <h5>{restaurant.name}</h5>
                     <p>{restaurant.menuItems.length} pratos</p>
                 </div>
 
 
-                <button onClick={() => { navigate('/restaurant-menu') }}>Mais</button>
+                <button >Mais</button>
 
             </div>
 

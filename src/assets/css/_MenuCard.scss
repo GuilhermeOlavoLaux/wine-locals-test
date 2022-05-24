@@ -1,0 +1,21 @@
+.menu-card-container {
+  background-color: $grey-200;
+
+  width: 292px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    h5{
+        
+    }
+  }
+}

@@ -68,4 +68,32 @@
 .restaurant-card .restaurant-card-container p {
   font-family: 'Nunito Sans', sans-serif;
 }
+
+.restaurant-menu {
+  background-color: #353535;
+  height: 100vh;
+}
+
+.menu-card-container {
+  background-color: #464646;
+  width: 292px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.menu-card-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=index.css.map */
