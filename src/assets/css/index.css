@@ -1,6 +1,16 @@
 .restaurants {
   background-color: #141314;
   height: 100vh;
+  position: relative;
+}
+
+.restaurants .grey-background {
+  position: absolute;
+  z-index: 1;
+}
+
+.restaurants .locals {
+  z-index: -1;
 }
 
 .restaurants .locals h1 {

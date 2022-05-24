@@ -13,7 +13,7 @@ export default function RestaurantCard({ restaurant }) {
                 </div>
 
 
-                MAIS
+                <button>Mais</button>
 
             </div>
 

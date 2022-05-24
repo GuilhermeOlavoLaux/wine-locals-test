@@ -1,7 +1,17 @@
 .restaurants {
   background-color: $grey-600;
+
   height: 100vh;
+  position: relative;
+
+  .grey-background {
+    position: absolute;
+    z-index: 1;
+  }
+
   .locals {
+    z-index: -1;
+
     h1 {
       color: $primary-yellow;
       font-family: 'Poppins', sans-serif;

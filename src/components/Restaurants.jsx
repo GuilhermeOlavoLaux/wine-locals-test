@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Header from "./Header";
 import RestaurantCard from "./RestaurantCard";
+import GreyBackground from "../assets/images/GreyBackground.png"
 
 export default function Restaurants() {
 
@@ -98,7 +99,9 @@ export default function Restaurants() {
 
                 <Header />
 
-         
+
+                {/* <img src={GreyBackground} alt="grey background" className="grey-background" /> */}
+
                 <div className="locals">
 
                     <h1>Lugares</h1>

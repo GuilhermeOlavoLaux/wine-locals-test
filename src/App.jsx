@@ -1,12 +1,16 @@
 import { Fragment } from "react";
-import Restaurants from "./components/Restaurants";
 import './index.css'
 import './assets/css/index.css'
+import AppRoutes from "./routes/AppRoutes";
+
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <Fragment>
-      <Restaurants />
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </Fragment>
   )
 }
