@@ -1,10 +1,9 @@
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto 50px auto;
 
-
-  .arrow-container{
+  .arrow-container {
     margin-top: 3px;
+    cursor: pointer;
   }
 }

@@ -1,11 +1,10 @@
 import { Fragment } from "react";
 import Header from "./Header";
 import RestaurantCard from "./RestaurantCard";
+import GreyBackground from '../assets/images/GreyBackground.png'
 const mockData = require('../fakeApi/api.json')
 
 export default function Restaurants() {
-
-
 
 
     function renderRestaurantsCards() {
@@ -21,10 +20,14 @@ export default function Restaurants() {
 
             <div className="restaurants">
 
+                <img src={GreyBackground} alt="grey background" className="grey-background" />
+
+                <div className="restaurants-container">
+
+
                 <Header />
 
 
-                {/* <img src={GreyBackground} alt="grey background" className="grey-background" />export default (first) => {second} */}
 
                 <div className="locals">
 
@@ -34,8 +37,10 @@ export default function Restaurants() {
 
                 </div>
 
+
                 {renderRestaurantsCards()}
             </div>
+                </div>
         </Fragment>
     )
 }

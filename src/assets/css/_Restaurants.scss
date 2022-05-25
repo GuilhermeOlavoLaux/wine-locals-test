@@ -1,25 +1,26 @@
 .restaurants {
-  background-color: $grey-600;
-
-  height: 100vh;
   position: relative;
-
   .grey-background {
     position: absolute;
-    z-index: 1;
   }
 
-  .locals {
-    z-index: -1;
+  .restaurants-container {
+    background-color: $grey-600;
 
-    h1 {
-      color: $primary-yellow;
-      font-family: 'Poppins', sans-serif;
-      font-weight: bold;
-    }
-    p {
-      color: $primary-white;
-      font-family: 'Nunito Sans', sans-serif;
+    height: auto;
+
+    padding: 30px;
+
+    .locals {
+      h1 {
+        color: $primary-yellow;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+      }
+      p {
+        color: $primary-white;
+        font-family: 'Nunito Sans', sans-serif;
+      }
     }
   }
 }

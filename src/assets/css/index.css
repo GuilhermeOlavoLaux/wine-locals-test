@@ -1,43 +1,38 @@
 .restaurants {
-  background-color: #141314;
-  height: 100vh;
   position: relative;
 }
 
 .restaurants .grey-background {
   position: absolute;
-  z-index: 1;
 }
 
-.restaurants .locals {
-  z-index: -1;
+.restaurants .restaurants-container {
+  background-color: #292929;
+  height: auto;
+  padding: 30px;
 }
 
-.restaurants .locals h1 {
+.restaurants .restaurants-container .locals h1 {
   color: #f3aa00;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
 
-.restaurants .locals p {
+.restaurants .restaurants-container .locals p {
   color: #fff;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 50px auto;
+      grid-template-columns: auto 50px auto;
 }
 
 .header-container .arrow-container {
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .restaurant-card {
@@ -49,11 +44,19 @@
           align-items: center;
 }
 
+.restaurant-card img {
+  height: 36px;
+  cursor: pointer;
+  z-index: 10;
+}
+
 .restaurant-card .restaurant-card-container {
   background-color: #333333;
   color: #fff;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10;
   border-radius: 8px;
   width: 254px;
   height: 75px;
@@ -73,7 +76,8 @@
 
 .restaurant-menu {
   background-color: #353535;
-  height: 100vh;
+  height: auto;
+  padding: 30px;
 }
 
 .restaurant-menu .restaurant-menu-container {
@@ -87,6 +91,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 340px;
+}
+
+.restaurant-menu .restaurant-menu-container .desktop-add-button {
+  cursor: pointer;
 }
 
 .restaurant-menu .restaurant-menu-container .restaurant-info h1 {
@@ -136,42 +144,56 @@
   margin-bottom: 10px;
 }
 
-.menu-card .menu-card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-card .menu-card-container .menu-card-line {
-  width: 10px;
-  height: 10px;
-  background-color: #f3aa00;
-  height: 140px;
-  border-radius: 20px 0px 0px 20px;
-}
-
-.menu-card .menu-card-container .menu-card-content {
+.new-dish {
+  height: 100vh;
   background-color: #464646;
-  width: 292px;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 0px 20px 20px 0px;
-  height: 100px;
-  color: #fff;
 }
 
-.menu-card .menu-card-container .menu-card-content .title {
+.new-dish .new-dish-container {
+  padding: 30px;
+}
+
+.new-dish .new-dish-container h1 {
+  color: #f3aa00;
+}
+
+.new-dish .new-dish-container .name-input {
+  padding-left: 10px;
+  height: 24px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.new-dish .new-dish-container .label-price-input {
+  background: white;
+  width: 160px;
+  padding: 5px;
+  border-radius: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 10px;
+  cursor: text;
+}
+
+.new-dish .new-dish-container .label-price-input p {
+  color: black;
+  padding-left: 2px;
+}
+
+.new-dish .new-dish-container .price-input {
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  padding-left: 5px;
+}
+
+.new-dish .new-dish-container textarea:focus,
+.new-dish .new-dish-container input:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.new-dish .new-dish-container p {
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

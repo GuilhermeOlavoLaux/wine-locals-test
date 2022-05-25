@@ -2,8 +2,11 @@ import { Fragment } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from './Header'
 import MenuCard from './MenuCard'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 export default function RestaurantMenu() {
+
+
 
 
     const navigate = useNavigate();
@@ -52,7 +55,16 @@ export default function RestaurantMenu() {
                         <h1>{restaurant.name}</h1>
                         <p>{restaurant.menuItems.length} pratos</p>
                     </div>
-                    <button onClick={() => navigate('/new-dish')}>Mais</button>
+
+                    <div className="desktop-add-button">
+                        <FontAwesomeIcon
+                            icon={faPlusCircle}
+                            size='lg'
+                            color='#f3aa00'
+                            onClick={() => navigate('/new-dish')}
+                        ></FontAwesomeIcon>
+                    </div>
+
                 </div>
 
                 {renderMenuCards()}

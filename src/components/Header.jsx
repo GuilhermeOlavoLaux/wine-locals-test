@@ -19,6 +19,11 @@ export default function Header({ backButtonFlag }) {
           ></FontAwesomeIcon>
         </div>
 
+
+        <div className="arrow-fragment" style={{ display: !backButtonFlag ? 'initial' : 'none' }}>
+
+        </div>
+
         <img src={CompanyLogo} alt='share eat' />
       </div>
     </Fragment>

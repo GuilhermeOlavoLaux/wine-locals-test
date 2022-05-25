@@ -2,12 +2,19 @@
   display: flex;
   align-items: center;
 
-
+  img {
+    height: 36px;
+    cursor: pointer;
+    z-index: 10;
+  }
 
   .restaurant-card-container {
     background-color: $grey-400;
     color: $primary-white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    z-index: 10;
 
     border-radius: 8px;
     width: 254px;
