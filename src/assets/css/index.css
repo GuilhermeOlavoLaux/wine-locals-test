@@ -26,8 +26,8 @@
 .header-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 50px auto;
-      grid-template-columns: auto 50px auto;
+  -ms-grid-columns: auto 96px auto;
+      grid-template-columns: auto 96px auto;
 }
 
 .header-container .arrow-container {
@@ -153,19 +153,24 @@
   padding: 30px;
 }
 
-.new-dish .new-dish-container h1 {
+.new-dish .new-dish-container .new-dish-content h1 {
   color: #f3aa00;
 }
 
-.new-dish .new-dish-container .name-input {
+.new-dish .new-dish-container .new-dish-content .name-input {
   padding-left: 10px;
-  height: 24px;
+  height: 20px;
+  width: 246px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.new-dish .new-dish-container .label-price-input {
+.new-dish .new-dish-container .new-dish-content .label-price-input {
   background: white;
-  width: 160px;
+  width: 86px;
+  height: 20px;
   padding: 5px;
   border-radius: 2px;
   display: -webkit-box;
@@ -174,26 +179,38 @@
   cursor: text;
 }
 
-.new-dish .new-dish-container .label-price-input p {
+.new-dish .new-dish-container .new-dish-content .label-price-input p {
   color: black;
   padding-left: 2px;
 }
 
-.new-dish .new-dish-container .price-input {
+.new-dish .new-dish-container .new-dish-content .price-input {
   border: none;
   border-radius: 2px;
-  width: 100px;
+  width: 60px;
   padding-left: 5px;
 }
 
-.new-dish .new-dish-container textarea:focus,
-.new-dish .new-dish-container input:focus {
+.new-dish .new-dish-container .new-dish-content input {
+  border: none;
+}
+
+.new-dish .new-dish-container .new-dish-content textarea {
+  border: none;
+  border-radius: 3px;
+  resize: none;
+  padding: 5px;
+  width: 246px;
+}
+
+.new-dish .new-dish-container .new-dish-content textarea:focus,
+.new-dish .new-dish-container .new-dish-content input:focus {
   -webkit-box-shadow: 0 0 0 0;
           box-shadow: 0 0 0 0;
   outline: 0;
 }
 
-.new-dish .new-dish-container p {
+.new-dish .new-dish-container .new-dish-content p {
   color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

@@ -4,57 +4,63 @@
   .new-dish-container {
     padding: 30px;
 
-    h1 {
-      color: $primary-yellow;
-    }
-
-    .name-input {
-      padding-left: 10px;
-      height: 24px;
-      font-family: 'Nunito Sans', sans-serif;
-    }
-
-    .label-price-input {
-      background: white;
-      width: 160px;
-      padding: 5px;
-      border-radius: 2px;
-      display: flex;
-      cursor: text;
-      p {
-        color: black;
-        padding-left: 2px;
+    .new-dish-content {
+      h1 {
+        color: $primary-yellow;
       }
-    }
 
-    .price-input {
-      border: none;
-      border-radius: 2px;
-      width: 100px;
-      padding-left: 5px;
-    }
+      .name-input {
+        padding-left: 10px;
+        height: 20px;
+        width: 246px;
+        padding: 5px;
+        border-radius: 3px;
+        border: none;
+        font-family: 'Nunito Sans', sans-serif;
+      }
 
-    textarea:focus,
-    input:focus {
-      box-shadow: 0 0 0 0;
-      outline: 0;
-    }
+      .label-price-input {
+        background: white;
+        width: 86px;
+        height: 20px;
+        padding: 5px;
+        border-radius: 2px;
+        display: flex;
+        cursor: text;
+        p {
+          color: black;
+          padding-left: 2px;
+        }
+      }
 
-    // .price-input-container {
-    //   display: flex;
-    //   align-items: center;
-    //   background-color: #fff;
-    //   p {
-    //     color: black;
-    //     padding-left: 10px;
-    //   }
+      .price-input {
+        border: none;
+        border-radius: 2px;
+        width: 60px;
+        padding-left: 5px;
+      }
 
-    //   .price-input {
-    //     border: none;
-    //   }
-    // }
-    p {
-      color: $primary-white;
+      input {
+        border: none;
+      }
+
+      textarea {
+        border: none;
+        border-radius: 3px;
+        resize: none;
+        padding: 5px;
+        width: 246px;
+      }
+
+      textarea:focus,
+      input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+      }
+
+      p {
+        color: $primary-white;
+      }
     }
   }
 }

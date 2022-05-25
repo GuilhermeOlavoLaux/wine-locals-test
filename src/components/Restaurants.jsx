@@ -6,7 +6,6 @@ const mockData = require('../fakeApi/api.json')
 
 export default function Restaurants() {
 
-
     function renderRestaurantsCards() {
         const restaurantCards = mockData.map((restaurant) => {
             return (

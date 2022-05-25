@@ -1,39 +1,17 @@
 import { Fragment } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Header from './Header'
 import MenuCard from './MenuCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 export default function RestaurantMenu() {
 
-
-
-
     const navigate = useNavigate();
 
+    const location = useLocation();
 
-    const restaurant = {
-        name: 'Silva Lanches',
-        menuItems: [
-            {
-                name: 'Xis Bacon',
-                description:
-                    'Pão, alface, tomate, carne, bacon, milho, ervilha, maionese, catchup, mostarda',
-                price: 20.5
-            },
-            {
-                name: 'Xis Veg',
-                description:
-                    'Pão, alface, tomate, bide de grão-de-bico, milho, ervilha, maionese, catchup, mostarda',
-                price: 22.5
-            },
-            {
-                name: 'Bauru Picanha',
-                description: 'Pão, alface, tomate, picanha, maionese',
-                price: 25
-            }
-        ]
-    }
+    const restaurant = location.state.restaurant
+
 
     function renderMenuCards() {
         const menuCards = restaurant.menuItems.map((menuItem) => {
@@ -61,7 +39,7 @@ export default function RestaurantMenu() {
                             icon={faPlusCircle}
                             size='lg'
                             color='#f3aa00'
-                            onClick={() => navigate('/new-dish')}
+                            onClick={() => navigate('/new-dish', { state: { restaurant: restaurant } })}
                         ></FontAwesomeIcon>
                     </div>
 
