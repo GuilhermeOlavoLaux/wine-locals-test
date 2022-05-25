@@ -1,5 +1,6 @@
 .restaurants {
   position: relative;
+  height: 100vh;
   .grey-background {
     position: absolute;
     width: 100vw;
@@ -7,8 +8,7 @@
 
   .restaurants-container {
     background-color: $grey-600;
-
-    height: auto;
+    height: calc(100% - 60px);
 
     padding: 30px;
 
@@ -47,7 +47,7 @@
     .restaurants-container {
       background-color: $grey-600;
 
-      height: auto;
+      height: calc(100% - 40px);
 
       padding: 20px;
 

@@ -76,6 +76,10 @@ export default function NewDish() {
 
                             <p>*A descrição deve conter até 200 caracteres.</p>
 
+
+
+                            <button className="save-button">Salvar</button>
+
                         </div>
                     </div>
                 </div>

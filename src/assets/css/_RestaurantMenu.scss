@@ -18,7 +18,7 @@
   .restaurant-menu-container {
     background-color: $grey-300;
 
-    height: auto;
+    height: calc(100% - 40px);
     padding: 20px;
 
     .restaurant-menu-content {
@@ -57,6 +57,7 @@
     }
 
     .restaurant-menu-container {
+      height: calc(100% - 60px);
       padding: 30px;
       .restaurant-menu-content {
         width: 340px;
