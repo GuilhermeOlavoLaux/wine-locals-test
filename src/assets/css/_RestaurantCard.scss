@@ -6,6 +6,7 @@
     height: 36px;
     cursor: pointer;
     z-index: 10;
+    margin-bottom: 20px;
   }
 
   .restaurant-card-container {
@@ -18,10 +19,14 @@
 
     border-radius: 8px;
     width: 254px;
-    height: 75px;
+    height: 36px;
     padding: 30px;
     margin-bottom: 20px;
     margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h5 {
       font-family: 'Poppins', sans-serif;
@@ -30,6 +35,14 @@
 
     p {
       font-family: 'Nunito Sans', sans-serif;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .restaurant-card {
+    .restaurant-card-container {
+      margin-right: 6px;
     }
   }
 }

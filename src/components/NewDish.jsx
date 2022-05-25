@@ -1,5 +1,5 @@
-import { Fragment, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Fragment, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Header from "./Header";
 
 
@@ -8,62 +8,80 @@ export default function NewDish() {
     const [price, setPrice] = useState('')
     const [description, setDescription] = useState('')
     const location = useLocation();
+    const navigate = useNavigate();
+    const restaurant = location.state?.restaurant
 
-    const restaurant = location.state.restaurant
+    function verifyRestaurantState() {
+        if (restaurant === undefined) {
+            navigate('/')
+        }
+    }
+
+    useEffect(() => {
+        verifyRestaurantState()
+    }, [])
 
     return (
         <Fragment>
 
-            <div className="new-dish">
+            {
+                restaurant &&
 
 
-                <div className="new-dish-container">
+                <div className="new-dish">
 
-                    <Header backButtonFlag={true}></Header>
 
-                    <div className="new-dish-content">
+                    <div className="new-dish-container">
 
-                        <h1>{restaurant.name}</h1>
+                        <Header backButtonFlag={true}></Header>
 
-                        <p>Nome do prato</p>
-                        <input
-                            type="text"
-                            className="name-input"
-                            value={name}
-                            placeholder="Prato"
-                            onChange={(e) => setName(e.target.value)}
-                        />
+                        <div className="new-dish-content">
 
-                        <p>Valor</p>
+                            <h1>{restaurant.name}</h1>
 
-                        <label htmlFor="price-input" className="label-price-input" >
-                            <p>R$</p>
+                            <p>Nome do prato</p>
                             <input
-                                type="price-input"
-                                id='price-input'
-                                value={price}
-                                className="price-input"
-                                placeholder="0,00"
-                                onChange={(e) => setPrice(e.target.value)}
+                                type="text"
+                                className="name-input"
+                                value={name}
+                                placeholder="Prato"
+                                onChange={(e) => setName(e.target.value)}
                             />
-                        </label>
+
+                            <p>Valor</p>
+
+                            <label htmlFor="price-input" className="label-price-input" >
+                                <p>R$</p>
+                                <input
+                                    type="price-input"
+                                    id='price-input'
+                                    value={price}
+                                    className="price-input"
+                                    placeholder="0,00"
+                                    onChange={(e) => setPrice(e.target.value)}
+                                />
+                            </label>
 
 
 
-                        <p>Descrição do prato</p>
+                            <p>Descrição do prato</p>
+                            
+                            <textarea cols="30"
+                                rows="10"
+                                value={description}
+                                maxLength='200'
+                                placeholder="Insira uma descrição"
+                                onChange={(e) => setDescription(e.target.value)}>
+                            </textarea>
 
-                        <textarea cols="30"
-                            rows="10"
-                            value={description}
-                            placeholder="Insira uma descrição"
-                            onChange={(e) => setDescription(e.target.value)}>
-                        </textarea>
+                            <p>*A descrição deve conter até 200 caracteres.</p>
 
-                        <p>*A descrição deve conter até 200 caracteres.</p>
-
+                        </div>
                     </div>
                 </div>
-            </div>
+
+
+            }
         </Fragment>
     )
 }

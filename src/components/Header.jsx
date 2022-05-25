@@ -13,7 +13,7 @@ export default function Header({ backButtonFlag }) {
         <div className='arrow-container' style={{ display: backButtonFlag ? 'initial' : 'none' }}>
           <FontAwesomeIcon
             icon={faChevronLeft}
-            size='md'
+            size='lg'
             color='#fff'
             onClick={() => navigate('/')}
           ></FontAwesomeIcon>

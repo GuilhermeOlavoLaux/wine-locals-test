@@ -7,9 +7,9 @@ const mockData = require('../fakeApi/api.json')
 export default function Restaurants() {
 
     function renderRestaurantsCards() {
-        const restaurantCards = mockData.map((restaurant) => {
+        const restaurantCards = mockData.map((restaurant, index) => {
             return (
-                <RestaurantCard restaurant={restaurant} />
+                <RestaurantCard key={index} restaurant={restaurant} />
             )
         })
         return restaurantCards
@@ -24,22 +24,22 @@ export default function Restaurants() {
                 <div className="restaurants-container">
 
 
-                <Header />
+                    <Header />
 
 
 
-                <div className="locals">
+                    <div className="locals">
 
-                    <h1>Lugares</h1>
+                        <h1>Lugares</h1>
 
-                    <p>{mockData.length} lugares cadastrados</p>
+                        <p>{mockData.length} lugares cadastrados</p>
 
+                    </div>
+
+
+                    {renderRestaurantsCards()}
                 </div>
-
-
-                {renderRestaurantsCards()}
             </div>
-                </div>
         </Fragment>
     )
 }

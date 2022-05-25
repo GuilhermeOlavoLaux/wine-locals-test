@@ -2,6 +2,7 @@
   position: relative;
   .grey-background {
     position: absolute;
+    width: 100vw;
   }
 
   .restaurants-container {
@@ -12,6 +13,8 @@
     padding: 30px;
 
     .locals {
+      margin-bottom: 24px;
+      margin-top: 28px;
       h1 {
         color: $primary-yellow;
         font-family: 'Poppins', sans-serif;
@@ -20,6 +23,44 @@
       p {
         color: $primary-white;
         font-family: 'Nunito Sans', sans-serif;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .restaurants {
+    .grey-background {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .restaurants {
+    position: relative;
+    .grey-background {
+      position: absolute;
+      width: 100vw;
+    }
+
+    .restaurants-container {
+      background-color: $grey-600;
+
+      height: auto;
+
+      padding: 20px;
+
+      .locals {
+        h1 {
+          color: $primary-yellow;
+          font-family: 'Poppins', sans-serif;
+          font-weight: bold;
+        }
+        p {
+          color: $primary-white;
+          font-family: 'Nunito Sans', sans-serif;
+        }
       }
     }
   }

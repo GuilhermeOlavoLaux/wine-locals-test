@@ -3,3 +3,7 @@
   padding: 0px;
   list-style: 0px;
 }
+
+body{
+  position: relative;
+}
