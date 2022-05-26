@@ -8,12 +8,12 @@ export default function AppRoutes() {
 
   return (
     <Routes>
+      
       <Route path="/" element={<Restaurants />} />
 
       <Route path="/restaurant-menu" element={<RestaurantMenu />} />
 
       <Route path="/new-dish" element={<NewDish />} />
-
 
     </Routes>
   )

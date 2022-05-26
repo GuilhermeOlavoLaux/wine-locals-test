@@ -24,27 +24,14 @@ export default function Restaurants() {
     }
     return (
         <Fragment>
-
             <div className="restaurants">
-
                 <img src={GreyBackground} alt="grey background" className="grey-background" />
-
                 <div className="restaurants-container">
-
-
                     <Header />
-
-
-
                     <div className="locals">
-
                         <h1>Lugares</h1>
-
                         <p>{mockData.length} lugares cadastrados</p>
-
                     </div>
-
-
                     {renderRestaurantsCards()}
                 </div>
             </div>

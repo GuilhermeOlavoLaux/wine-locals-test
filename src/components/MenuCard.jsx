@@ -9,11 +9,11 @@ export default function MenuCard({ menuItem }) {
           <div className='menu-card-content'>
             <div className='title'>
               <h5>{menuItem.name}</h5>
-
               <h5>{menuItem.price}</h5>
             </div>
 
             <p>{menuItem.description}</p>
+            
           </div>
         </div>
       </div>

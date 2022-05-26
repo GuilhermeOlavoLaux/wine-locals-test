@@ -2,7 +2,6 @@ import { Fragment, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Header from "./Header";
 
-
 export default function NewDish() {
     const [name, setName] = useState("")
     const [price, setPrice] = useState('')
@@ -11,48 +10,26 @@ export default function NewDish() {
     const navigate = useNavigate();
     const restaurant = location.state?.restaurant
 
+    useEffect(() => {
+        verifyRestaurantState()
+    }, [])
+
     function verifyRestaurantState() {
         if (restaurant === undefined) {
             navigate('/')
         }
     }
 
-    useEffect(() => {
-        verifyRestaurantState()
-    }, [])
-
-
-    function handlePriceChange(e) {
-
-        let number = parseInt(e.target.value)
-
-        setPrice(parseInt(e.target.value).toFixed(2).toString())
-    }
-
-    console.log(price)
-
-
-
-
-
     return (
         <Fragment>
-
             {
                 restaurant &&
 
-
                 <div className="new-dish">
-
-
                     <div className="new-dish-container">
-
                         <Header backButtonFlag={true}></Header>
-
                         <div className="new-dish-content">
-
                             <h1>{restaurant.name}</h1>
-
                             <p>Nome do prato</p>
                             <input
                                 type="text"
@@ -62,7 +39,6 @@ export default function NewDish() {
                                 onChange={(e) => setName(e.target.value)}
                             />
                             <div className="price-input-container">
-
                                 <p>Valor</p>
 
                                 <label htmlFor="price-input" className="label-price-input" >
@@ -78,8 +54,6 @@ export default function NewDish() {
                                 </label>
 
                             </div>
-
-
                             <p>Descrição do prato</p>
 
                             <textarea cols="30"
@@ -91,14 +65,11 @@ export default function NewDish() {
                             </textarea>
 
                             <p className="description-text">*A descrição deve conter até 200 caracteres.</p>
-
                             <button className="save-button">Salvar</button>
 
                         </div>
                     </div>
                 </div>
-
-
             }
         </Fragment>
     )

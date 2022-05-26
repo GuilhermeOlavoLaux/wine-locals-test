@@ -7,11 +7,8 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 import GreyBackground from '../assets/images/GreyBackground.png'
 
 export default function RestaurantMenu() {
-
     const navigate = useNavigate();
-
     const location = useLocation();
-
     const restaurant = location.state?.restaurant
 
     function verifyRestaurantState() {
@@ -24,16 +21,12 @@ export default function RestaurantMenu() {
         verifyRestaurantState()
     }, [])
 
-
     function renderMenuCards() {
         const menuCards = restaurant.menuItems.map((menuItem, index) => {
             return <MenuCard key={index} menuItem={menuItem} />
         })
-
         return menuCards
     }
-
-
 
     return (
         <Fragment>
@@ -41,7 +34,6 @@ export default function RestaurantMenu() {
                 restaurant &&
                 <Fragment>
                     <div className="restaurant-menu">
-
                         <img src={GreyBackground} alt="grey background" className="grey-background" />
 
                         <div className="mobile-add-button">
@@ -52,10 +44,9 @@ export default function RestaurantMenu() {
                                 onClick={() => navigate('/new-dish', { state: { restaurant: restaurant } })}
                             ></FontAwesomeIcon>
                         </div>
+
                         <div className='restaurant-menu-container'>
-
                             <Header backButtonFlag={true} />
-
                             <div className='restaurant-menu-content'>
                                 <div className='restaurant-info'>
                                     <h1>{restaurant.name}</h1>

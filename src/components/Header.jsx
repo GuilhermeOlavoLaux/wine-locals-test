@@ -10,6 +10,7 @@ export default function Header({ backButtonFlag }) {
   return (
     <Fragment>
       <div className='header-container'>
+
         <div className='arrow-container' style={{ display: backButtonFlag ? 'initial' : 'none' }}>
           <FontAwesomeIcon
             icon={faChevronLeft}
@@ -19,12 +20,10 @@ export default function Header({ backButtonFlag }) {
           ></FontAwesomeIcon>
         </div>
 
-
-        <div className="arrow-fragment" style={{ display: !backButtonFlag ? 'initial' : 'none' }}>
-
-        </div>
+        <div className="arrow-fragment" style={{ display: !backButtonFlag ? 'initial' : 'none' }}></div>
 
         <img src={CompanyLogo} alt='share eat' />
+        
       </div>
     </Fragment>
   )
