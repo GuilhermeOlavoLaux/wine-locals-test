@@ -12,100 +12,106 @@
         margin-bottom: 24px;
         margin-top: 28px;
       }
-
-      p {
-        color: $primary-white;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: bold;
-      }
-
-      .name-input {
-        padding-left: 10px;
-        height: 20px;
-        width: 310px;
-        padding: 5px;
-        border-radius: 3px;
-        border: none;
-        color: black;
-        font-family: Nunito Sans, Regular;
-      }
-
-      .label-price-input {
-        background: white;
-        width: 86px;
-        height: 20px;
-        padding: 5px;
-        border-radius: 2px;
+      .new-dish-form {
         display: flex;
-        align-items: center;
         justify-content: center;
-        cursor: text;
-        font-family: 'Nunito Sans', sans-serif;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
 
         p {
-          color: black;
-          padding-left: 2px;
-          padding-right: 2px;
-
-          letter-spacing: 0px;
-          font-family: Nunito Sans, sans-serif;
+          color: $primary-white;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: bold;
         }
-      }
 
-      .price-input-container {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
+        .name-input {
+          padding-left: 10px;
+          height: 20px;
+          width: 310px;
+          padding: 5px;
+          border-radius: 3px;
+          border: none;
+          color: black;
+          font-family: Nunito Sans, Regular;
+        }
 
-      .price-input {
-        border: none;
-        border-radius: 2px;
-        width: 60px;
-      }
-      
-      .price-input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-      }
+        .label-price-input {
+          background: white;
+          width: 310px;
+          height: 20px;
+          padding: 5px;
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          cursor: text;
+          font-family: 'Nunito Sans', sans-serif;
 
-      input {
-        border: none;
-      }
+          p {
+            color: black;
+            padding-left: 2px;
+            padding-right: 2px;
 
-      textarea {
-        border: none;
-        border-radius: 3px;
-        resize: none;
-        padding: 5px;
-        width: 310px;
-        font-family: 'Nunito Sans', sans-serif;
-      }
+            letter-spacing: 0px;
+            font-family: Nunito Sans, sans-serif;
+          }
+        }
 
-      textarea:focus,
-      input:focus {
-        box-shadow: 0 0 0 0;
-        outline: 0;
-      }
+        .price-input-container {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
 
-      p {
-        color: $primary-white;
-      }
+        .price-input {
+          border: none;
+          border-radius: 2px;
+          width: 60px;
+        }
 
-      .description-text {
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: lighter;
-      }
+        .price-input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
 
-      .save-button {
-        margin-top: 80px;
-        background-color: $primary-yellow;
-        border: none;
-        border-radius: 6px;
-        height: 30px;
-        width: 310px;
-        cursor: pointer;
-        color: black;
-        font-family: 'Poppins', sans-serif;
-        font-weight: bold;
+        input {
+          border: none;
+        }
+
+        textarea {
+          border: none;
+          border-radius: 3px;
+          resize: none;
+          padding: 5px;
+          width: 310px;
+          font-family: 'Nunito Sans', sans-serif;
+        }
+
+        textarea:focus,
+        input:focus {
+          box-shadow: 0 0 0 0;
+          outline: 0;
+        }
+
+        p {
+          color: $primary-white;
+        }
+
+        .description-text {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: lighter;
+        }
+
+        .save-button {
+          margin-top: 80px;
+          background-color: $primary-yellow;
+          border: none;
+          border-radius: 6px;
+          height: 30px;
+          width: 310px;
+          cursor: pointer;
+          color: black;
+          font-family: 'Poppins', sans-serif;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -119,21 +125,29 @@
   }
 }
 
+//   width: 310px;
+
 @media (max-width: 600px) {
   .new-dish {
     .new-dish-container {
       .new-dish-content {
-        .name-input {
-          height: 20px;
-          width: calc(100% - 7px);
-        }
+        .new-dish-form {
+          display: initial;
+          text-align: initial;
+          .name-input {
+            height: 20px;
+            width: calc(100% - 7px);
+          }
+          .label-price-input {
+            width: 80px;
+          }
+          textarea {
+            width: calc(100% - 7px);
+          }
 
-        textarea {
-          width: calc(100% - 7px);
-        }
-
-        .save-button {
-          width: 100%;
+          .save-button {
+            width: 100%;
+          }
         }
       }
     }

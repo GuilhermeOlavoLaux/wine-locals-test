@@ -16,7 +16,7 @@
     cursor: pointer;
     z-index: 10;
     border-radius: 8px;
-    width: 254px;
+    width: 60%;
     height: 36px;
     padding: 30px;
     margin-bottom: 20px;
@@ -42,6 +42,15 @@
   .restaurant-card {
     .restaurant-card-container {
       margin-right: 6px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurant-card {
+    .restaurant-card-container {
+      width: 100%;
     }
   }
 }
