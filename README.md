@@ -1,7 +1,7 @@
 # Wine Locals
 
 ## 👩🏻‍💻 Sobre o Projeto:
-Teste desenvolvido em três dias, seguindo o design proposto no desafio e consumindo os dados mockados dentro do projeto.
+Teste desenvolvido em três dias, seguindo o design proposto no desafio e consumindo os dados mockados da api dentro do projeto.
 
 ## 🛠️ Construído com
 * React 
