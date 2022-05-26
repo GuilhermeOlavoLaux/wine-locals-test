@@ -21,6 +21,20 @@ export default function NewDish() {
         verifyRestaurantState()
     }, [])
 
+
+    function handlePriceChange(e) {
+
+        let number = parseInt(e.target.value)
+
+        setPrice(parseInt(e.target.value).toFixed(2).toString())
+    }
+
+    console.log(price)
+
+
+
+
+
     return (
         <Fragment>
 
@@ -47,25 +61,27 @@ export default function NewDish() {
                                 placeholder="Prato"
                                 onChange={(e) => setName(e.target.value)}
                             />
+                            <div className="price-input-container">
 
-                            <p>Valor</p>
+                                <p>Valor</p>
 
-                            <label htmlFor="price-input" className="label-price-input" >
-                                <p>R$</p>
-                                <input
-                                    type="price-input"
-                                    id='price-input'
-                                    value={price}
-                                    className="price-input"
-                                    placeholder="0,00"
-                                    onChange={(e) => setPrice(e.target.value)}
-                                />
-                            </label>
+                                <label htmlFor="price-input" className="label-price-input" >
+                                    <p>R$</p>
+                                    <input
+                                        type="number"
+                                        id='price-input'
+                                        value={price}
+                                        className="price-input"
+                                        placeholder="0,00"
+                                        onChange={(e) => setPrice(e.target.value)}
+                                    />
+                                </label>
 
+                            </div>
 
 
                             <p>Descrição do prato</p>
-                            
+
                             <textarea cols="30"
                                 rows="10"
                                 value={description}
@@ -74,9 +90,7 @@ export default function NewDish() {
                                 onChange={(e) => setDescription(e.target.value)}>
                             </textarea>
 
-                            <p>*A descrição deve conter até 200 caracteres.</p>
-
-
+                            <p className="description-text">*A descrição deve conter até 200 caracteres.</p>
 
                             <button className="save-button">Salvar</button>
 

@@ -31,15 +31,17 @@
     h5 {
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
+      color: $primary-white;
     }
 
     p {
       font-family: 'Nunito Sans', sans-serif;
+      color: $primary-white;
     }
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .restaurant-card {
     .restaurant-card-container {
       margin-right: 6px;

@@ -26,8 +26,8 @@
 }
 
 .restaurants .restaurants-container .locals p {
-  color: #fff;
   font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
 }
 
 @media (min-width: 600px) {
@@ -36,7 +36,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .restaurants {
     position: relative;
   }
@@ -49,22 +49,19 @@
     height: calc(100% - 40px);
     padding: 20px;
   }
-  .restaurants .restaurants-container .locals h1 {
-    color: #f3aa00;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-  }
-  .restaurants .restaurants-container .locals p {
-    color: #fff;
-    font-family: 'Nunito Sans', sans-serif;
-  }
 }
 
 .header-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 96px auto;
-      grid-template-columns: auto 96px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .header-container img {
@@ -72,6 +69,8 @@
 }
 
 .header-container .arrow-container {
+  position: absolute;
+  left: 0;
   z-index: 20;
 }
 
@@ -123,13 +122,15 @@
 .restaurant-card .restaurant-card-container h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  color: #fff;
 }
 
 .restaurant-card .restaurant-card-container p {
   font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .restaurant-card .restaurant-card-container {
     margin-right: 6px;
   }
@@ -156,7 +157,7 @@
 .restaurant-menu .restaurant-menu-container {
   background-color: #353535;
   height: calc(100% - 40px);
-  padding: 20px;
+  padding: 30px;
 }
 
 .restaurant-menu .restaurant-menu-container .restaurant-menu-content {
@@ -183,11 +184,21 @@
 }
 
 .restaurant-menu .restaurant-menu-container .restaurant-menu-content .restaurant-info h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   color: #f3aa00;
 }
 
 .restaurant-menu .restaurant-menu-container .restaurant-menu-content .restaurant-info p {
+  font-family: 'Nunito Sans', sans-serif;
   color: #fff;
+}
+
+@media (max-width: 400px) {
+  .restaurant-menu .restaurant-menu-container {
+    height: calc(100% - 40px);
+    padding: 20px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -236,6 +247,11 @@
   color: #fff;
 }
 
+.menu-card .menu-card-container .menu-card-content p {
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .menu-card .menu-card-container .menu-card-content .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,6 +263,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.menu-card .menu-card-container .menu-card-content .title h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media (min-width: 600px) {
@@ -265,19 +287,28 @@
 }
 
 .new-dish .new-dish-container .new-dish-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   color: #f3aa00;
   margin-bottom: 24px;
   margin-top: 28px;
+}
+
+.new-dish .new-dish-container .new-dish-content p {
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
 }
 
 .new-dish .new-dish-container .new-dish-content .name-input {
   padding-left: 10px;
   height: 20px;
   width: 310px;
-  padding: 5px 0px;
+  padding: 5px;
   border-radius: 3px;
   border: none;
-  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+  font-family: Nunito Sans, Regular;
 }
 
 .new-dish .new-dish-container .new-dish-content .label-price-input {
@@ -289,19 +320,37 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: text;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .new-dish .new-dish-container .new-dish-content .label-price-input p {
   color: black;
   padding-left: 2px;
+  padding-right: 2px;
+  letter-spacing: 0px;
+  font-family: Nunito Sans, sans-serif;
+}
+
+.new-dish .new-dish-container .new-dish-content .price-input-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .new-dish .new-dish-container .new-dish-content .price-input {
   border: none;
   border-radius: 2px;
   width: 60px;
-  padding-left: 5px;
+}
+
+.new-dish .new-dish-container .new-dish-content .price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .new-dish .new-dish-container .new-dish-content input {
@@ -312,8 +361,9 @@
   border: none;
   border-radius: 3px;
   resize: none;
-  padding: 5px 0px;
+  padding: 5px;
   width: 310px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .new-dish .new-dish-container .new-dish-content textarea:focus,
@@ -327,6 +377,11 @@
   color: #fff;
 }
 
+.new-dish .new-dish-container .new-dish-content .description-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: lighter;
+}
+
 .new-dish .new-dish-container .new-dish-content .save-button {
   margin-top: 80px;
   background-color: #f3aa00;
@@ -334,7 +389,10 @@
   border-radius: 6px;
   height: 30px;
   width: 310px;
+  cursor: pointer;
   color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 400px) {
@@ -346,11 +404,10 @@
 @media (max-width: 600px) {
   .new-dish .new-dish-container .new-dish-content .name-input {
     height: 20px;
-    width: 100%;
-    padding-left: 0px;
+    width: calc(100% - 7px);
   }
   .new-dish .new-dish-container .new-dish-content textarea {
-    width: 100%;
+    width: calc(100% - 7px);
   }
   .new-dish .new-dish-container .new-dish-content .save-button {
     width: 100%;

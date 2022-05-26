@@ -21,8 +21,8 @@
         font-weight: bold;
       }
       p {
-        color: $primary-white;
         font-family: 'Nunito Sans', sans-serif;
+        color: $primary-white;
       }
     }
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .restaurants {
     position: relative;
     .grey-background {
@@ -46,22 +46,9 @@
 
     .restaurants-container {
       background-color: $grey-600;
-
       height: calc(100% - 40px);
 
       padding: 20px;
-
-      .locals {
-        h1 {
-          color: $primary-yellow;
-          font-family: 'Poppins', sans-serif;
-          font-weight: bold;
-        }
-        p {
-          color: $primary-white;
-          font-family: 'Nunito Sans', sans-serif;
-        }
-      }
     }
   }
 }

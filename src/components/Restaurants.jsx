@@ -6,7 +6,15 @@ const mockData = require('../fakeApi/api.json')
 
 export default function Restaurants() {
 
+    function refactorMoney() {
+        mockData.forEach(restaurant => {
+            restaurant.menuItems.forEach(menuItem => {
+                menuItem.price = menuItem.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+            })
+        })
+    }
     function renderRestaurantsCards() {
+        refactorMoney()
         const restaurantCards = mockData.map((restaurant, index) => {
             return (
                 <RestaurantCard key={index} restaurant={restaurant} />
